@@ -1,7 +1,7 @@
 // write  function called countChar that takes to parameter : a string and character to count
 
 
-// first way using core concept
+//! first way using core concept
 const countChar = (str,char) => {
     let charSum = 0;
     for(let i = 0; i < str.length; i++){
@@ -16,7 +16,7 @@ const sentence1 = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nih
 console.log(countChar(sentence1, 'i'))
 
 
-2nd way using reduce method
+//! 2nd way using reduce method
 const countChar = (str,char) => {
     const convertStrToArr = Array.from(str);
     const count = convertStrToArr.reduce((acc,curr) => {
@@ -31,7 +31,7 @@ console.log(countChar(sentence2, 'q'));
 
 
 
-3rd way using flter and reduce
+//! 3rd way using flter and reduce
 const countChar = (str, char) => {
     const convertStrToArr = [...str];
     const countCharacter = convertStrToArr
