@@ -24,21 +24,21 @@ const products = [
 // ! create a function that takes a array of an object which calculates the total price and returns its as a number
 
 // 1st way to using the reduce function
-// function getTotalPrice(arr){
-//     return arr.reduce((acc,curr) => curr.price +acc, 0);
-// }
-// console.log(getTotalPrice(products)); // should return the total price of all products in the array
+function getTotalPrice(arr){
+    return arr.reduce((acc,curr) => curr.price +acc, 0);
+}
+console.log(getTotalPrice(products)); // should return the total price of all products in the array
 
 // 2nd way to using for of loop
 
-// function getTotalPrice(arr){
-//     let totalPrice = 0;
-//     for(let product of arr){
-//         totalPrice += product.price;
-//     }
-//     return totalPrice;
-// }
-// console.log(getTotalPrice(products)); // should return the total price of all products in the array
+function getTotalPrice(arr){
+    let totalPrice = 0;
+    for(let product of arr){
+        totalPrice += product.price;
+    }
+    return totalPrice;
+}
+console.log(getTotalPrice(products)); // should return the total price of all products in the array
 
 // 3rd way using core concept in js
 
