@@ -16,7 +16,7 @@ function reverseWords(sentence){
     return reverse
 }
 
-using built in reverse method
+//using built in reverse method
 function reverseWords(sentence) {
     const arr = sentence.split(' ');
     let reverse = ''

@@ -4,15 +4,15 @@
 // (the same forwards and backwards) and false otherwise.
 
 // 1st way using core javascript concept
-// function isPalindrome (str) {
-//     let reverse = ''
-//     for(let i = str.length - 1; i >= 0; i--){
-//         reverse = reverse + str[i];
-//     }
-//     return reverse === str ? true : false
-// }
-// console.log(isPalindrome('radar')); // output : true
-// console.log(isPalindrome('javascript')); // output : false
+function isPalindrome (str) {
+    let reverse = ''
+    for(let i = str.length - 1; i >= 0; i--){
+        reverse = reverse + str[i];
+    }
+    return reverse === str ? true : false
+}
+console.log(isPalindrome('radar')); // output : true
+console.log(isPalindrome('javascript')); // output : false
 
 // 2nd way using reduce method 
 function isPalindrome(str) {

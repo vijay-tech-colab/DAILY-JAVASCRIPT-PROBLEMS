@@ -1,10 +1,10 @@
 // Write a function sumOfTwoNumbers that takes two numbers as arguments and returns their sum.
 
 // using core concept
-// function sumOfTwoNumbers(a,b){
-//     return a + b;
-// }
-// console.log(sumOfTwoNumbers(2,4));
+function sumOfTwoNumbers(a,b){
+    return a + b;
+}
+console.log(sumOfTwoNumbers(2,4));
 
 // using reduce method ?
 function sumOfTwoNumbers(nums){

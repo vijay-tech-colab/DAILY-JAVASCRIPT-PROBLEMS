@@ -1,3 +1,7 @@
+//!  1. Array Manipulation
+//! Problem:
+//! Write a function to find all unique pairs of integers in an array that sum to a specific target value.
+
 function findPairs(nums, target) {
     const pairs = [];
     const seen = new Set();

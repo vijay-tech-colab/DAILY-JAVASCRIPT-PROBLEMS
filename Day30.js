@@ -83,15 +83,15 @@
 // Problem: Write a JavaScript function called findUniqueCharacters that takes a string as input and returns a 
 // string of unique characters found in the input string, in the order they first appear.
 
-// const findUniqueCharacters = (str) => {
-//   let uniqueChar = '';
-//   for(let i = 0; i < str.length; i++){
-//     if(!uniqueChar.includes(str.at(i))){
-//       uniqueChar += str.at(i);
-//     }
-//   }
-//   return uniqueChar
-// }
+const findUniqueCharacters = (str) => {
+  let uniqueChar = '';
+  for(let i = 0; i < str.length; i++){
+    if(!uniqueChar.includes(str.at(i))){
+      uniqueChar += str.at(i);
+    }
+  }
+  return uniqueChar
+}
 
 // Test cases
 console.log(findUniqueCharacters("Hello World")); // Output: "HeloWrd"

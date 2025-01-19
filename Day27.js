@@ -3,6 +3,7 @@
 //The function should be case-insensitive, meaning it should count both uppercase and lowercase vowels.
 
 // 1st way using core concept
+
 const countVowels = function (str) {
     const lowercaseStr = str.toLowerCase();
     let vowelCount = 0;
