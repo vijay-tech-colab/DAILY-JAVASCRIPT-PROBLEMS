@@ -6,24 +6,23 @@ function customPromiseAll(promises) {
         let completed = 0;
 
         if (promises.length === 0) {
-            resolve([]); // If no promises, return empty array
+            resolve([]); 
         }
-
         promises.forEach((promise, index) => {
-            Promise.resolve(promise) // Ensure it's a promise
+            Promise.resolve(promise)
                 .then(value => {
                     results[index] = value;
                     completed++;
 
                     if (completed === promises.length) {
-                        resolve(results); // Resolve only when all promises complete
+                        resolve(results);
                     }
                 })
-                .catch(reject); // Reject immediately if any promise fails
+                .catch(reject); 
         });
     });
 }
-// Example usage
+
 const p1 = Promise.resolve(1);
 const p2 = Promise.resolve(2);
 const p3 = Promise.resolve(3);

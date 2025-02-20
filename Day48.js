@@ -1,4 +1,5 @@
-// Basic Promises: Write a function fetchData() that returns a promise. If the promise resolves, log "Data fetched successfully," and if it rejects, log "Error fetching data."
+//!  Basic Promises: 
+// Write a function fetchData() that returns a promise. If the promise resolves, log "Data fetched successfully," and if it rejects, log "Error fetching data."
 
 function fetchData () {
     return new Promise((resolve,reject) => {
@@ -24,7 +25,7 @@ function delayedMessage(message, delay) {
 delayedMessage("Hello, this message is delayed!", 2000);
 
 
-// Intermediate Level
+//! Intermediate Level
 // Chaining Promises: Create two functions, stepOne and stepTwo, that return promises resolving after 1 second each. Chain them so that stepTwo only executes after stepOne is resolved, and log appropriate messages.
 function stepOne() {
     return new Promise((resolve) => {
