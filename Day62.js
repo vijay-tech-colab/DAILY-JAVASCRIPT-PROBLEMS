@@ -3,11 +3,11 @@
 
 //? A palindrome is a word, phrase, number, or sequence of characters that reads the same forward and backward (ignoring case and non-alphanumeric characters).
 
-// const isPalindrome = (str) => {
-//     let cleanedStr = str.replace(/\s+/g, "").toLowerCase();
-//     const strReverse = [...cleanedStr].reverse().join('');
-//     return strReverse === cleanedStr ? true : false
-// }
+const isPalindromeWith = (str) => {
+    let cleanedStr = str.replace(/\s+/g, "").toLowerCase();
+    const strReverse = [...cleanedStr].reverse().join('');
+    return strReverse === cleanedStr ? true : false
+}
 
 const isPalindrome = (str) => {
     let strReverse = ''
@@ -17,10 +17,8 @@ const isPalindrome = (str) => {
     return str === strReverse ? true : false
 }
 
-
-
 console.log(isPalindrome("racecar"));  // true
 console.log(isPalindrome("hello"));    // false
-console.log(isPalindrome("A man, a plan, a canal, Panama"));  // true
+console.log(isPalindrome("A man, a plan, a canal, Panama"));  // false
 console.log(isPalindrome("12321"));  // true
 console.log(isPalindrome("123456")); // false
