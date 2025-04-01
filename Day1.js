@@ -1,7 +1,7 @@
-// /*
-// Write a function that return a findlongestword and take a string as a input.
-// If there are multiple are multiple longestword, return first longestword. 
-// */
+/*
+Write a function that return a findlongestword and take a string as a input.
+If there are multiple are multiple longestword, return first longestword. 
+*/
 
 // //? create a function and using sort method 
 // const findLongestWord = (str) => {
