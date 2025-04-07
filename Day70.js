@@ -1,3 +1,6 @@
+
+
+
 const person = {
     name: "John",
     age: 22,
@@ -20,6 +23,18 @@ console.log(person); // Check the updated object
 
 // Check if the person object has a property called 'name'
 console.log(Object.hasOwn(person, "name")); // true
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //! Intermediate Object Questions
@@ -56,6 +71,8 @@ console.log(mergeObjects({ id: 3, name: "Priya", marks: 88 }, {age: 22,city: "De
 // Convert the person object into a JSON string and back to an object.
 const jsonObj = JSON.parse(JSON.stringify(person));
 console.log(jsonObj);
+
+
 
 
 //! Advanced Object Questions
