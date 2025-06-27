@@ -74,3 +74,4 @@ function countVowels(str){
     return countVowel;
 }
 console.log(countVowels('vijay'));
+console.log(countVowels('hello world')); 
