@@ -262,8 +262,3 @@ test('adds 2 + 2 = 4', () =&gt; {
 
 <p align="center">
   Happy Coding! ✨ Keep pushing one commit a day.
-</p>
-"""
-with open('/mnt/data/README.md', 'w', encoding='utf-8') as f:
-    f.write(readme_content)
-print("README.md created at /mnt/data/README.md")
