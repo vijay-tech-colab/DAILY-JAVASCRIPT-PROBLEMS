@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center><h1>This Keyword in JavaScript ?</h1></center>
+    <!-- <script>
+      const user = {
+        name: "Alice",
+        regularFn: function () {
+          console.log("regularFn:", this.name); //Alice
+        },
+        arrowFn: () => {
+          console.log("arrowFn:", this.name);  // undefind
+        },
+        outer: function () {
+          console.log("outer:", this.name); //Alice
+
+          function innerRegular() {
+            console.log("innerRegular:", this.name); // globle
+          }
+          const innerArrow = () => {
+            console.log("innerArrow:", this.name); // globle
+          };
+
+          innerRegular(); // ? undefind
+          innerArrow(); // ? undefind
+        },
+      };
+
+      user.regularFn(); // ? Alice
+      user.arrowFn(); // ? undefind
+      user.outer(); // ? Alice
+    </script> -->
+    <!-- <script>
+
+      const person = {
+        name: "Bob",
+        sayHi: function () {
+          console.log("sayHi:", this.name); // Bob
+
+          setTimeout(function () {
+            console.log("setTimeout regular:", this.name); // undefind
+          }, 100);
+
+          setTimeout(() => {
+            console.log("setTimeout arrow:", this.name); // Bob
+          }, 200);
+        },
+        greet: () => {
+          console.log("greet:", this.name);  //undefined
+        },
+      };
+
+      person.sayHi(); // ?
+      person.greet(); // ?
+    </script> -->
+    <script>
+      const game = {
+        title: "Cricket",
+        start: function () {
+          console.log("start:", this.title);
+
+          const inner1 = function () {
+            console.log("inner1:", this.title);
+          };
+
+          const inner2 = () => {
+            console.log("inner2:", this.title);
+          };
+
+          inner1(); // ?
+          inner2(); // ?
+        },
+        end: () => {
+          console.log("end:", this.title);
+        },
+      };
+
+      game.start(); // ?
+      game.end(); // ?
+    </script>
+  </body>
+</html>
